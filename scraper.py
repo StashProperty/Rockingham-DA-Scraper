@@ -39,7 +39,7 @@ for item in links:
 		da['description'] = description
 		da['info_url'] = info_url
 		da['date_scraped'] = today
-                da['address'] = address
+		da['address'] = address
 		da_set.append(da)
 
 data = pd.DataFrame(da_set)

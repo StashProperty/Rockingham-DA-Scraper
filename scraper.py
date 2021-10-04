@@ -33,7 +33,7 @@ for item in links:
 		for link in related_documents:
 			if "development-application" in link.attrs['href']:
 				info_url = base_url + link.attrs['href']
-				address = link.text.split("Development application - ")
+				address = link.text.replace("Development application - ","")
 		da = {}
 		da['council_reference'] = None
 		da['description'] = description

@@ -35,7 +35,7 @@ for item in links:
 				info_url = base_url + link.attrs['href']
 				address = link.text.replace("Development application - ","")
 		da = {}
-		da['council_reference'] = None
+		da['council_reference'] = 0
 		da['description'] = description
 		da['info_url'] = info_url
 		da['date_scraped'] = today

@@ -12,7 +12,7 @@ engine = create_engine(f'sqlite:///{DATABASE}', echo=False)
 da_set = []
 headers={"User-Agent":"PostmanRuntime/7.28.3"}
 base_url = "https://www.rockingham.wa.gov.au"
-today = datetime.datetime.strftime(datetime.datetime.now(),"%d-%m-%Y")
+today = datetime.datetime.strftime(datetime.datetime.now(),"%m-%d-%Y")
 
 raw = requests.get("https://rockingham.wa.gov.au/planning-and-building/local-planning/town-planning-advertising-and-submissions",headers=headers)
 soup = BeautifulSoup(raw.content, 'html.parser')
